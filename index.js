@@ -1,8 +1,9 @@
 const express = require('express');
 const fs = require('fs');
+require('dotenv').config();
 
 const app = express();
-const PORT = 4000;
+const PORT = process.env.PORT || 5000;
 let users = [];
 //New imports
 const http = require('http').Server(app);
