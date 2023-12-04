@@ -11,9 +11,9 @@ const cors = require('cors');
 
 app.use(cors());
 
-app.get('/api', (req, res) => {
+app.get('/', (req, res) => {
     res.json({
-        message: 'Hello world',
+        message: 'Your Backend Server Successfully Deployed...',
     });
 });     
 const socketIO = require('socket.io')(http, {
