@@ -16,9 +16,11 @@ app.get('/', (req, res) => {
         message: 'Your Backend Server Successfully Deployed...',
     });
 });     
+
+
 const socketIO = require('socket.io')(http, {
     cors: {
-        origin: "http://localhost:3000"
+        origin: "*"
     }
 });
 
